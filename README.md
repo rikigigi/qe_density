@@ -8,6 +8,6 @@
       dens = qer.Density('./test_c.hdf5')
       dens.rho #density grid data
       
-see [./hdf5read.ipynb]() for an example
+see [./hdf5read.ipynb](./hdf5read.ipynb) for an example
 
       
