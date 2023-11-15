@@ -8,12 +8,11 @@ authors = [{name = "Riccardo Bertossa", email = "rbertoss@sissa.it"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
-
-[project.urls]
-Home = "https://github.com/rikigigi/qe_density"
-
 dependencies = [
     "h5py",
     "numpy",
     "k3d"
 ]
+
+[project.urls]
+Home = "https://github.com/rikigigi/qe_density"
