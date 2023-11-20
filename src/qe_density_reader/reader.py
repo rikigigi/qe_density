@@ -127,3 +127,18 @@ class Density:
                     dset=f_out.create_dataset('dipole_total',data=self.dipole_total)
                 except Exception as e:
                     print(e)
+
+def read_dipole_write(input_file: str, output_file: str):
+    rho=Density(input_file)
+    rho.dipole()
+    rho.write_compressed_hdf5(output_file)
+
+def main():
+    #two arguments: input_file, output_file
+    #writes the dipole in the output_file
+    import sys
+    #check that we have exaclty two arguments
+    if len(sys.argv) != 3:
+        print(f'Usage: {sys.argv[0]} input_file output_file')
+        sys.exit(1)
+    read_dipole_write(sys.argv[1],sys.argv[2])

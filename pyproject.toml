@@ -16,3 +16,6 @@ dependencies = [
 
 [project.urls]
 Home = "https://github.com/rikigigi/qe_density"
+
+[project.scripts]
+write_qe_dipole = "qe_density_reader.reader:main"
